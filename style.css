@@ -54,3 +54,51 @@ img{
     left: 630px;
     color: white;
 }
+/* styling the form */
+#second input{
+    height: 40px;
+    border-radius: 7px;
+    font-size: 15px;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid gainsboro;
+}
+#second input:focus{
+    outline: none;
+    border:1px solid rgb(57, 1, 97);
+     
+}
+
+#second input::placeholder{
+font-size: 15px;   
+}
+#second input[type="text"]{
+    width: 350px; }
+#second #number{
+        width: 350px; }
+#second #cvc{
+    width: 135px;
+}
+#second input[type="button"]{
+    width: 350px;
+    background-color: rgb(57, 1, 97);
+    color: white;
+    
+}
+#second label{
+    color: rgb(57, 1, 97);
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+    
