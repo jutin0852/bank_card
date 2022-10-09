@@ -8,12 +8,10 @@
 </head>
 <body>
     <div id="first">
-        <img src="/images/card-logo.svg" alt="" srcset="" style="position:absolute; height: 40px; left:270px ;
-        top:170px; box-shadow: none;">
-        <img src="/images/bg-card-front.png" alt="frontcard" srcset="" style="margin-top: 150px;
-        margin-left: 250px;">
-        <img src="/images/bg-card-back.png" alt="backcard" srcset="" style="margin-top: 40px;
-        margin-left: 350px;">
+        
+        <img id="frontcard" src="/images/bg-card-front.png" alt="frontcard">
+        <img id="cardlogo" src="/images/card-logo.svg" alt="card logo">
+        <img id="backcard" src="/images/bg-card-back.png" alt="backcard"  style="">
 
         <p id="cardnum" >0000 0000 0000 0000</p>
         <p id="cardname">Dikonu jutin</p>
@@ -25,7 +23,7 @@
 
 
     <div id="second">
-        <form>
+        <form id="card">
             <label for="name">CARDHOLDER NAME</label><br>
             <input type="text" id="name" placeholder="e.g. Dikonu Jutin "><br><br>
 
@@ -36,10 +34,10 @@
             <input type="number" name="month" id="month" placeholder="MM" min="1" max="31">
             <input type="number" name="year" id="year" placeholder="YY" min="2022" max="2026">
             <input type="number" name="cvc" id="cvc" placeholder="e.g. 123"><br><br>
-            <input type="button" value="Confirm">
+            <button id="submit">submit</button>
 
         </form>
     </div>
-    
+    <script src="/script.js"></script>
 </body>
 </html>

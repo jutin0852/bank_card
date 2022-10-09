@@ -2,103 +2,228 @@
     margin: 0%;
     padding: 0%;
 }
-body{
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-}
-#first{
-    background-image: url(/images/bg-main-desktop.png);
-    background-repeat: no-repeat;
-    background-size:cover;
-    grid-column: 1/5;
-}
-#second{
-    grid-column: 5/13;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/* styling the cards */
-img{ 
-    height: 200px;
-    box-shadow: 0px 7px 18px -5px ;
-    border-radius: 10px;
-}
+@media screen and (min-width:1200px) {
+    
+
+    body{
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+    }
+    #first{
+        background-image: url(/images/bg-main-desktop.png);
+        background-repeat: no-repeat;
+        background-size:cover;
+        grid-column: 1/4;
+    }
+    #second{
+        grid-column: 4/13;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* styling the cards */
+    img{ 
+        height: 200px;
+        box-shadow: 0px 7px 18px -5px ;
+        border-radius: 10px;
+    }
+            
+    #cardnum{
+        position: absolute;
+        font-size: 25px;
+        top: 270px;
+        left: 200px;
+    letter-spacing: 3px;
+    color: white;
+    }
+    #cardname{
+        position: absolute;
+        top: 315px;
+        left: 180px;
+        color: white;
+    
+    }
+    #MY{
+        position: absolute;
+        top: 315px;
+        left: 450px;
+        color: white;
+    
+
+    }
+    #cvv{
+        position: absolute;
+        top: 470px;
+        left: 490px;
+        color: white;
+    }
+    /* styling the form */
+    #second input{
+        height: 40px;
+        border-radius: 7px;
+        font-size: 15px;
+        padding: 10px;
+        margin: 5px;
+        border: 1px solid gainsboro;
+    }
+    #second input:focus{
+        outline: none;
+        border:1px solid rgb(57, 1, 97);
         
-#cardnum{
-    position: absolute;
-    font-size: 25px;
-    top: 270px;
-    left: 295px;
-   letter-spacing: 3px;
-   color: white;
-}
-#cardname{
-    position: absolute;
-    top: 315px;
-    left: 280px;
-    color: white;
-   
-}
-#MY{
-    position: absolute;
-    top: 315px;
-    left: 550px;
-    color: white;
-   
+    }
 
-}
-#cvv{
-    position: absolute;
-    top: 480px;
-    left: 630px;
-    color: white;
-}
-/* styling the form */
-#second input{
-    height: 40px;
-    border-radius: 7px;
-    font-size: 15px;
-    padding: 10px;
-    margin: 5px;
-    border: 1px solid gainsboro;
-}
-#second input:focus{
-    outline: none;
-    border:1px solid rgb(57, 1, 97);
-     
-}
-
-#second input::placeholder{
-font-size: 15px;   
-}
-#second input[type="text"]{
-    width: 350px; }
-#second #number{
+    #second input::placeholder{
+    font-size: 15px;   
+    }
+    #second input[type="text"]{
         width: 350px; }
-#second #cvc{
-    width: 135px;
+    #second #number{
+            width: 350px; }
+    #second #cvc{
+        width: 135px;
+    }
+    #submit{
+        width: 350px;
+        background-color: rgb(57, 1, 97);
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        
+    }
+    #second label{
+        color: rgb(57, 1, 97);
+    }
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+    -moz-appearance: textfield;
+    }
+
 }
-#second input[type="button"]{
-    width: 350px;
-    background-color: rgb(57, 1, 97);
+@media screen and (max-width:1200px) {
+    
+    body{
+        display: grid;
+        grid-template-rows: repeat(12,1fr);
+    }
+    #first{
+        background-image: url(/images/bg-main-desktop.png);
+        background-repeat: no-repeat;
+        background-size:cover;
+        grid-row: 1/4;
+    }
+    #second{
+        grid-row: 4/13;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* styling the cards */
+    img{ 
+        height: 200px;
+        box-shadow: 0px 7px 18px -5px ;
+        border-radius: 10px;
+    }
+            
+    #cardnum{
+        position: absolute;
+        font-size: 25px;
+        top: 270px;
+        left: 200px;
+    letter-spacing: 3px;
     color: white;
+    }
+    #cardname{
+        position: absolute;
+        top: 315px;
+        left: 180px;
+        color: white;
+    
+    }
+    #MY{
+        position: absolute;
+        top: 315px;
+        left: 450px;
+        color: white;
+    
+
+    }
+    #cvv{
+        position: absolute;
+        top: 470px;
+        left: 490px;
+        color: white;
+    }
+    /* styling the form */
+    #second input{
+        height: 40px;
+        border-radius: 7px;
+        font-size: 15px;
+        padding: 10px;
+        margin: 5px;
+        border: 1px solid gainsboro;
+    }
+    #second input:focus{
+        outline: none;
+        border:1px solid rgb(57, 1, 97);
+        
+    }
+
+    #second input::placeholder{
+    font-size: 15px;   
+    }
+    #second input[type="text"]{
+        width: 350px; }
+    #second #number{
+            width: 350px; }
+    #second #cvc{
+        width: 135px;
+    }
+    #submit{
+        width: 350px;
+        background-color: rgb(57, 1, 97);
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        
+    }
+    #second label{
+        color: rgb(57, 1, 97);
+    }
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+    -moz-appearance: textfield;
+    }
     
 }
-#second label{
-    color: rgb(57, 1, 97);
+#frontcard{
+    position:absolute;
+     top: 150px;
+    left: 150px;
 }
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+#backcard{
+    position:absolute;
+    top: 380px;
+    left: 200px;
+
 }
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
+#cardlogo{
+    position:absolute;
+    height: 40px;
+    left:170px ;
+    top:170px;
+     box-shadow: none;
 }
-
-
-    
