@@ -61,13 +61,23 @@
         color: white;
     
     }
-    #MY{
+    #M{
         position: absolute;
-        top: 315px;
-        left: 450px;
+        top: 310px;
+        left: 460px;
         color: white;
-    
-
+    }
+    #Y{
+        position: absolute;
+        top: 310px;
+        left: 480px;
+        color: white;
+    }
+    #line{
+        position: absolute;
+        top: 310px;
+        left: 476px;
+        color: white;
     }
     #cvv{
         position: absolute;
@@ -182,13 +192,23 @@
         color: white;
     
     }
-    #MY{
+    #M{
         position: absolute;
         top: 310px;
         left: 320px;
         color: white;
-    
-
+    }
+    #Y{
+        position: absolute;
+        top: 310px;
+        left: 342px;
+        color: white;
+    }
+    #line{
+        position: absolute;
+        top: 310px;
+        left: 337px;
+        color: white;
     }
     #cvv{
         position: absolute;
