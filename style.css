@@ -132,6 +132,18 @@
     input[type=number] {
     -moz-appearance: textfield;
     }
+    #iconcomplete{
+        
+        box-shadow: none;
+        height: 100px;
+    }
+    
+       
+    
+    #complete{
+        text-align: center;
+        color:rgb(57, 1, 97);
+    }
 
 }
 @media screen and (max-width:1200px) {
@@ -262,6 +274,18 @@
     /* Firefox */
     input[type=number] {
     -moz-appearance: textfield;
+    }
+    #iconcomplete{
+        
+        box-shadow: none;
+        height: 100px;
+    }
+    
+       
+    
+    #complete{
+        text-align: center;
+        color:rgb(57, 1, 97);
     }
     
 }
