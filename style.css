@@ -288,4 +288,142 @@
     color: red;
 }
 }
+@media screen and (max-width:500px) {
+    
+    body{
+        display: grid;
+        grid-template-rows: repeat(12,1fr);
+    }
+    #first{
+        background-image: url(/images/bg-main-desktop.png);
+        background-repeat: no-repeat;
+        background-size:cover;
+        grid-row: 1/6;
+    }
+    #second{
+        grid-row: 6/13;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* styling the cards */
+    #frontcard{
+        position:absolute;
+         top: 105px;
+        left: 20px;
+    }
+    #backcard{
+        position:absolute;
+        top: 10px;
+        left: 70px;
+    
+    }
+    #cardlogo{
+        position:absolute;
+        height: 28px;
+        left:50px ;
+        top:170px;
+         box-shadow: none;
+    }
+    img{ 
+        height: 170px;
+        box-shadow: 0px 7px 18px -5px ;
+        border-radius: 10px;
+    }
+            
+    #cardnum{
+        position: absolute;
+        font-size: 16px;
+        top: 260px;
+        left: 60px;
+        letter-spacing: 3px;
+        color: white;
+    }
+    #cardname{
+        position: absolute;
+        top: 310px;
+        left: 40px;
+        color: white;
+    
+    }
+    #M{
+        position: absolute;
+        top: 310px;
+        left: 315px;
+        color: white;
+    }
+    #Y{
+        position: absolute;
+        top: 310px;
+        left: 342px;
+        color: white;
+    }
+    #line{
+        position: absolute;
+        top: 310px;
+        left: 332px;
+        color: white;
+    }
+    #cvv{
+        position: absolute;
+        top: 120px;
+        left: 410px;
+        color: white;
+    }
+    /* styling the form */
+    #second input{
+        height: 40px;
+        border-radius: 7px;
+        font-size: 15px;
+        padding: 10px;
+        margin: 5px;
+        border: 1px solid gainsboro;
+    }
+    #second input:focus{
+        outline: none;
+        border:1px solid rgb(57, 1, 97);
+        
+    }
 
+    #second input::placeholder{
+    font-size: 15px;   
+    }
+    #second input[id="name"]{
+        width: 300px; }
+    #second #number{
+            width: 300px; }
+    #second #cvc{
+        width: 100px;
+    }
+    #month ,#year{
+        width: 50px;
+    }
+    #submit{
+        width: 300px;
+        background-color: rgb(57, 1, 97);
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        
+    }
+    #second label{
+        color: rgb(57, 1, 97);
+    }
+   
+    #iconcomplete{
+        
+        box-shadow: none;
+        height: 100px;
+    }
+    
+       
+    
+    #complete{
+        text-align: center;
+        color:rgb(57, 1, 97);
+        display: none;
+    }
+.blank{
+    color: red;
+}
+}
