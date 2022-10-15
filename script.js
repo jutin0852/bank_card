@@ -14,12 +14,12 @@ var second=document.getElementById("second")
     if(isNaN(cardNumber.value)){
         blank[1].textContent="Wrong format, numbers only";
     }
+    
 
 }
 function nameInput(){
     document.getElementById("cardname").textContent=cardName.value.toUpperCase();
     blank[0].textContent="";
-    // cardName.value.toUpperCase();
 
 }
 

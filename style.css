@@ -1,6 +1,7 @@
 *{
     margin: 0%;
     padding: 0%;
+    font-family: "Lucida Console", "Courier New", monospace;
 }
 @media screen and (min-width:1200px) {
     
@@ -48,9 +49,9 @@
             
     #cardnum{
         position: absolute;
-        font-size: 25px;
+        font-size: 20px;
         top: 270px;
-        left: 200px;
+        left: 195px;
     letter-spacing: 3px;
     color: white;
     }
@@ -64,7 +65,7 @@
     #M{
         position: absolute;
         top: 310px;
-        left: 460px;
+        left: 453px;
         color: white;
     }
     #Y{
@@ -76,7 +77,7 @@
     #line{
         position: absolute;
         top: 310px;
-        left: 476px;
+        left: 470px;
         color: white;
     }
     #cvv{
@@ -143,6 +144,7 @@
     }
     .blank{
     color: red;
+    font-size: 13px;
 }
 
 
@@ -192,7 +194,7 @@
             
     #cardnum{
         position: absolute;
-        font-size: 25px;
+        font-size: 20px;
         top: 260px;
         left: 60px;
         letter-spacing: 3px;
@@ -208,7 +210,7 @@
     #M{
         position: absolute;
         top: 310px;
-        left: 320px;
+        left: 315px;
         color: white;
     }
     #Y{
@@ -220,7 +222,7 @@
     #line{
         position: absolute;
         top: 310px;
-        left: 337px;
+        left: 332px;
         color: white;
     }
     #cvv{
