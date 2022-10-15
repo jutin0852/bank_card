@@ -101,17 +101,22 @@
     }
 
     #second input::placeholder{
-    font-size: 15px;   
+    font-size: 15px;  
+    text-transform: none; 
     }
-    #second input[type="text"]{
-        width: 350px; }
+    #second input[id="name"]{
+        width: 350px;
+        text-transform: capitalize; }
     #second #number{
             width: 350px; }
     #second #cvc{
         width: 135px;
     }
+    #month ,#year{
+        width: 93px;
+    }
     #submit{
-        width: 350px;
+        width: 360px;
         background-color: rgb(57, 1, 97);
         color: white;
         padding: 10px;
@@ -121,17 +126,8 @@
     #second label{
         color: rgb(57, 1, 97);
     }
-    /* Chrome, Safari, Edge, Opera */
-    input::-webkit-outer-spin-button,
-    input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-    }
+  
 
-    /* Firefox */
-    input[type=number] {
-    -moz-appearance: textfield;
-    }
     #iconcomplete{
         
         box-shadow: none;
@@ -143,7 +139,12 @@
     #complete{
         text-align: center;
         color:rgb(57, 1, 97);
+        display: none;
     }
+    .blank{
+    color: red;
+}
+
 
 }
 @media screen and (max-width:1200px) {
@@ -246,12 +247,15 @@
     #second input::placeholder{
     font-size: 15px;   
     }
-    #second input[type="text"]{
+    #second input[id="name"]{
         width: 350px; }
     #second #number{
             width: 350px; }
     #second #cvc{
         width: 135px;
+    }
+    #month ,#year{
+        width: 93px;
     }
     #submit{
         width: 350px;
@@ -264,17 +268,7 @@
     #second label{
         color: rgb(57, 1, 97);
     }
-    /* Chrome, Safari, Edge, Opera */
-    input::-webkit-outer-spin-button,
-    input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-    }
-
-    /* Firefox */
-    input[type=number] {
-    -moz-appearance: textfield;
-    }
+   
     #iconcomplete{
         
         box-shadow: none;
@@ -286,7 +280,10 @@
     #complete{
         text-align: center;
         color:rgb(57, 1, 97);
+        display: none;
     }
-    
+.blank{
+    color: red;
+}
 }
 
