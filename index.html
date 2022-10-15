@@ -25,7 +25,7 @@
 
     <div id="second">
         <form action="/complete.html" id="card">
-            <label for="name">CARDHOLDER NAME</label><br>
+            <label id="lname" for="name">CARDHOLDER NAME</label><br>
             <input type="text" id="name" oninput="nameInput()" placeholder="e.g. Dikonu Jutin " maxlength="15"><br>
             <p class="blank"></p><br>
 
@@ -37,7 +37,7 @@
             <input type="text" name="month" id="month" oninput="monthInput()" maxlength="2" placeholder="MM" min="1" max="31" >
             <input type="text" name="year" id="year" oninput="yearInput()" placeholder="YY" min="22" max="26" maxlength="2">
             <input type="text" name="cvc" id="cvc"  placeholder="e.g. 123" min="100" max="999" maxlength="3"><br>
-           <p> <span  class="blank"></span>  <span style="float: right; margin-right: 30px;" class="blank"></span></p><br>
+           <p> <span  class="blank"></span>  <span id="blank" style="float: right; " class="blank"></span></p><br>
            <button type="submit" id="submit">  submit</button>
 
         </form>
