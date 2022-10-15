@@ -293,6 +293,7 @@
     body{
         display: grid;
         grid-template-rows: repeat(12,1fr);
+        overflow: hidden;
     }
     #first{
         background-image: url(/images/bg-main-desktop.png);
